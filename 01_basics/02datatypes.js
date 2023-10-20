@@ -34,6 +34,11 @@ console.log(typeof arr) //object
 console.log(typeof obj) //object
 console.log(typeof func) //function
 
+
+//All the memory for primitive data type is allocated in stack memory
+//All the memory for non-primitve data type is allocated in heap memory and its reference availabel in stack memory
+
+
 /*
 JavaScript is a dynamically typed language, which means that data types of variables are determined by the value they hold at runtime and can change throughout the program as we assign different values to them.
 */
