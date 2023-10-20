@@ -25,6 +25,17 @@ console.log(Math.min(4,5,4));
 console.log(Math.pow(2,5));
 console.log(Math.sqrt(4));
 
+//Formula to generate number between 1 to 9
+console.log(Math.floor(Math.random()*10)+1);
+
+//Formula to generate number between given range
+
+let min = 10, max = 20;
+
+console.log(Math.floor(Math.random()*(max-min+1))+min)
+
+
+
 
 
 
