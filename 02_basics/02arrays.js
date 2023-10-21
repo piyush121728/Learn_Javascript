@@ -4,6 +4,7 @@ const anoArr = new Array(6,7,8);
 console.log(arr)
 console.log(anoArr)
 
+//merge two arrays 
 
 console.log(arr.concat(anoArr)) //[1, 2, 3, 4, 5, 6, 7, 8] or Combines two or more arrays. This method returns a new array without modifying any existing arrays.
 
