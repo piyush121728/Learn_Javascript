@@ -24,7 +24,7 @@ const course = {
 }
 
 const {courseId} = course;
-console.log(course.courseId); //101
+console.log(courseId); //101
 
 const {courseName: sub} = course; //English
 console.log(sub);

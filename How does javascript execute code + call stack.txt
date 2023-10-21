@@ -1,0 +1,6 @@
+/* Js Execution Context*/
+
+Js code -> Step 1 : Global Execution Context (store in 'this' keyword)
+        -> Step 2 :  -> Memory creation phase
+                     -> Execution phase
+        -> Step 3 : Output return to GLE
