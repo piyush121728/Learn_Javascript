@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create HTML Element</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //creating a div using createElement('HMTLElementName') function
+    const div = document.createElement('div');
+
+    div.className = 'main'; //to set class name
+
+    div.id = Math.round(Math.random() * 10 + 1); //to set id name
+
+    div.setAttribute('title', 'genereted Title'); //to set other attribute
+
+    // div.innerText="Main hoo inshaan." //to set text content
+
+    //optimize way of adding text in a HTML element by creating a text node and then append to HTML element
+    const text = document.createTextNode('Main hoo na.');
+    div.appendChild(text);
+
+    console.log(div);
+    document.body.appendChild(div);
+</script>
+</html>

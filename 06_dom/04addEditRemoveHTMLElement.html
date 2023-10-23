@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add, edit, remove HMTL Element</title>
+</head>
+
+<body>
+    <ul class="langs">
+        <li class="lang">C++</li>
+    </ul>
+</body>
+<script>
+
+    /*Add HTML Element*/
+
+    function addLi(langName) {
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.langs').appendChild(li);
+    }
+
+    addLi('Python');
+    addLi('JavaScript');
+
+    function optimizeAddli(langName) {
+        const li = document.createElement('li');
+        const text = document.createTextNode(langName);
+        li.appendChild(text);
+        document.querySelector('.langs').appendChild(li);
+    }
+    optimizeAddli('Java');
+    optimizeAddli('Ruby');
+
+    /*Edit HTML Element*/
+
+    //Change the text of 2nd li with new text 'pearl'
+    const secondList = document.querySelector('li:nth-child(2)');
+
+    //1st way
+    // secondList.innerHTML = "Pearl"
+
+    //2nd way
+    // const newLi = document.createElement('li');
+    // newLi.textContent = "Pearl";
+    // secondList.replaceChildren(newLi);
+
+    //3rd way
+    secondList.outerHTML = "<li>Pearl</li>";
+
+    /*Remove HTML Element*/
+
+    //Remove the last li
+    const lastLi = document.querySelector('li:last-child');
+    lastLi.remove();
+
+</script>
+
+</html>

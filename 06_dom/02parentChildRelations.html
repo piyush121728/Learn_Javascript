@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML elements relations</title>
+</head>
+
+<body>
+    <ul class="parent">
+        <li class="day">Sunday</li>
+        <li class="day">Monday</li>
+        <li class="day">Tuesday</li>
+        <li class="day">Wednesday</li>
+        <li class="day">Thrusday</li>
+        <li class="day">Friday</li>
+        <li class="day">Saturday</li>
+    </ul>
+</body>
+<script>
+
+    const parent = document.querySelector('.parent');
+    console.log(parent);
+    //To access the i-th children element of a parent element, we use parent.children[i]
+    console.log(parent.children); //This will give HTMLCollection of all the children element of a parent element
+
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+    }
+
+    console.log(parent.firstElementChild.innerHTML); //to access the first child element
+    console.log(parent.lastElementChild.innerHTML); //to access the last child element
+
+
+    const child = parent.children[0];
+    console.log(child.parentElement) //to access the parent element of a child element, we use child.parentElement
+    console.log(child.nextElementSibling.innerHTML); //to access the next sibling element of a element, we use element.nextElementSibling
+
+    console.log(parent.childNodes); //to access the text content, child elements and child element's text content, we use parent.childNodes
+
+</script>
+
+</html>
