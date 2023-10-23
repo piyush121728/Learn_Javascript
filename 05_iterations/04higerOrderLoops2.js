@@ -1,6 +1,6 @@
 /*
     Filter loop: 
-        Syntax : objectName( callbackFunction )
+        Syntax : objectName( callbackFunction(){} )
         Lilter loop returns filter object
 */
 
@@ -20,6 +20,51 @@ const books = [
 const fictionBook = books.filter((book) => (book.genre == "Fiction"));
 console.log(fictionBook);
 
-const editionBook = books.filter((book) => {return book.edition != 2010});
+const editionBook = books.filter((book) => { return book.edition != 2010 });
 console.log(editionBook);
+
+/*
+    Map loop:
+        Syntax : objectName( CallbackFunction(){} )
+        Map loop returns object;
+
+*/
+
+const nums = [1, 2, 3, 4, 5, 6]
+
+const newNums = nums.map((num) => (num + 1));
+console.log(nums);
+console.log(newNums);
+
+/* Nested higer order loops */
+
+const newNumbers = nums.map((num) => num * 10).map((num) => num + 1).filter((num) => num > 50);
+console.log(newNumbers);
+
+/* 
+    Reduce Loop :
+        Syntax : objectName.reduce( callbackFunction(accumulator, currentValue){}, initialValue);
+        Reduce Loop return accumulator value(i.e sum of all the element of array or object).
+*/
+
+const tot = nums.reduce((acc, num) => (acc + num), 0);
+console.log(tot);
+
+const product = [
+    item1 = {
+        name: "shampoo",
+        price: 100,
+    },
+    item2 = {
+        name: "oil",
+        price: 200,
+    },
+    item3 = {
+        name: "soap",
+        price: 250,
+    }
+]
+
+const totAmount = product.reduce((acc, item) => (acc + item.price), 0);
+console.log(totAmount);
 

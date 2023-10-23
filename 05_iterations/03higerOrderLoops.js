@@ -33,7 +33,7 @@ for (const [key, value] of mp) {
 
 /*
     forEach loop : 
-        Syntax : arrayName.forEach( callbackFunction(item,index,arryaName) )
+        Syntax : arrayName.forEach( callbackFunction(item,index,arryaName){} )
         Callback function doesn't contain function name.
         forEach doesn't return anythings.
 */
