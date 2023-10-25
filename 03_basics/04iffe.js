@@ -9,8 +9,8 @@ Note : must use semicolon o.w iife will not stop the context
 
 
 
-//named iffe
+//named iife
 ( function chai() { console.log('Chai is ready.') })();
 
-//simple iffe
+//simple iife
 ((username)=>{console.log(`user is ${username}`)})('piyush');
