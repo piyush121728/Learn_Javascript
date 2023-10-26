@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval</title>
+</head>
+
+<body>
+    <h1 id="heading">Piyush aur code...</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    //Task 1 : when we click on start button, print every second your name and time on consle
+    //Task 2 : when we click on stop button, stop the task 1
+
+    let interval;
+    function startChange() {
+        interval = setInterval((name) => {
+            console.log(name, Date.now());
+        }, 1000, "Piyush");
+    }
+    
+
+    //Task 1 :
+    document.getElementById('start').addEventListener('click', startChange)
+
+    //Task 2 :
+    document.getElementById('stop').addEventListener('click', () => (clearInterval(interval)))
+
+</script>
+
+</html>

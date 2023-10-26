@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout</title>
+</head>
+
+<body>
+    <h1 id="heading">Chai aur code...</h1>
+    <button id="btn">Stop</button>
+</body>
+<script>
+
+    /*
+        Task 1: Change the innerHTML of h1 after 2 second
+        Task 2: By clicking on stop button, task 1 must be stop
+    */
+
+    //Task 1:
+    const changeText = setTimeout(() => {
+        document.getElementById('heading').innerHTML = "Piyush aur code...";
+    }, 2000);
+
+    //Task 2:
+    document.getElementById('btn').addEventListener('click', () => {
+        clearTimeout(changeText);
+    })
+
+</script>
+
+</html>
