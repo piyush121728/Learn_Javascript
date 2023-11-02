@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            /* Add shadows to create the "card" effect */
+            width: 500px;
+            height: 600px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+    </style>
+</head>
+
+<body style="background-color: grey;">
+    <!-- 0 UNSENT Client has been created. open() not called yet.<br>
+    1 OPENED open() has been called.<br>
+    2 HEADERS_RECEIVED send() has been called, and headers and status are available.<br>
+    3 LOADING Downloading; responseText holds partial data.<br>
+    4 DONE The operation is complete. -->
+
+    <div class="card">
+        <img src="https://images.pexels.com/photos/3158814/pexels-photo-3158814.jpeg" alt="Avatar" style="width:100%">
+        <div class="container">
+            <h4>John Doe</h4>
+        </div>
+    </div>
+</body>
+
+<script>
+    const apiURL = "https://api.github.com/users/piyush121728"
+
+    const xhr = new XMLHttpRequest(); //Client has been created
+    xhr.open("GET", apiURL);
+
+    xhr.onreadystatechange = () => {
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(xhr.responseText)
+            console.log(data);
+            document.querySelector(".card img").setAttribute("src", `${data.avatar_url}`);
+            document.querySelector("h4").innerHTML = `${data.name} , Followers : ${data.followers}`;
+            document.querySelector("h4").style.fontWeight = `bold`;
+        }
+    }
+    xhr.send();
+</script>
+
+</html>

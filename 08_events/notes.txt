@@ -1,0 +1,14 @@
+JavaScript is a single-threaded language, which means it can only execute one line of code at a time.
+The main thread has to wait for each line of code to finish executing before it can move on to the next line.
+
+Asynchronous JavaScript is a technique that allows JavaScript to execute code without blocking the main thread. 
+This is done by using callbacks and event loops.
+
+Block code block the flow of program when i/o happens. (Sync)
+Non Blocking code does not block execution when i/0 happens. (Async)
+
+Js engine contain heap memory and call stack.
+
+In Asynchronous JavaScript, when a function from a call stack need to wait for sometimes to execute then there is 
+register call back in a web api that register the function and pass that function in task queue when the time comes
+to execute then that function get loaded in call stack to execute.
