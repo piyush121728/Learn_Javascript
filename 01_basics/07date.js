@@ -10,19 +10,19 @@ console.log(date.toJSON());
 console.log(date.toUTCString());
 console.log(date.toISOString());
 
-/*
-Output : is in form of string
-2023-10-20T18:18:33.967Z
-Fri Oct 20 2023 18:18:33 GMT+0000 (Coordinated Universal Time)
-10/20/2023, 6:18:33 PM
-10/20/2023
-6:18:33 PM
-Fri Oct 20 2023
-18:18:33 GMT+0000 (Coordinated Universal Time)
-2023-10-20T18:18:33.967Z
-Fri, 20 Oct 2023 18:18:33 GMT
-2023-10-20T18:18:33.967Z
-*/
+
+// Output : is in form of string
+// 2023-10-20T18:18:33.967Z
+// Fri Oct 20 2023 18:18:33 GMT+0000 (Coordinated Universal Time)
+// 10/20/2023, 6:18:33 PM
+// 10/20/2023
+// 6:18:33 PM
+// Fri Oct 20 2023
+// 18:18:33 GMT+0000 (Coordinated Universal Time)
+// 2023-10-20T18:18:33.967Z
+// Fri, 20 Oct 2023 18:18:33 GMT
+// 2023-10-20T18:18:33.967Z
+
 
 console.log(date.getDate()); 
 console.log(date.getDay());
@@ -40,7 +40,7 @@ let myDate = new Date()
 // console.log(myDate.toLocaleString());
 // console.log(typeof myDate);
 
-// let myCreatedDate = new Date(2023, 0, 23)
+let myCreatedDate = new Date(2023, 0, 23)
 // let myCreatedDate = new Date(2023, 0, 23, 5, 3)
 // let myCreatedDate = new Date("2023-01-14")
 // let myCreatedDate = new Date("01-14-2023")

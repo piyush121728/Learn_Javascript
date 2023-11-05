@@ -40,5 +40,6 @@ console.log(typeof func) //function
 
 
 /*
-JavaScript is a dynamically typed language, which means that data types of variables are determined by the value they hold at runtime and can change throughout the program as we assign different values to them.
+JavaScript is a dynamically typed language, which means that data types of variables are determined by the value 
+hey hold at runtime and can change throughout the program as we assign different values to them.
 */

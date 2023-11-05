@@ -9,10 +9,10 @@ console.log(arr);
 arr.pop(6); //pop the element from end
 console.log(arr);
 
-arr.unshift(0); //shift the array's elements by one positions and push the element at the start
+arr.unshift(0); //shift the array's elements by one positions towards right and push the element at the start
 console.log(arr);
 
-arr.shift(0); //pop the element at the start and shift the array's elements by one position
+arr.shift(0); //pop the element at the start and shift the array's elements by one position towards left
 console.log(arr);
 
 console.log(arr[2]) //access the arrays's element
@@ -28,7 +28,7 @@ console.log(arr.slice(2, 4)); //print array's element from index 2 to 4-1
 console.log(arr); //[ 1, 2, 3, 4, 5 ]
 
 
-console.log(arr.splice(2, 4)); //print and cut array's element from index 2 to 4
+console.log(arr.splice(2, 4)); //print and cut array's element from index 2 to 4 and modify the original array
 console.log(arr); //[ 1, 2 ]
 
 const newArr = arr.join(); //convert array into string and element sperated by ','

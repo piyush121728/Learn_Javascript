@@ -17,8 +17,8 @@ let booleanIsLoggedIn = Boolean(isLoggedIn);
 
 //"" => false;
 //"Piysh" => true;
-//null => false;
 //0 => false or 1 or any => true;
+//null => false;
 
 //Sepical conversion
 console.log(2 + "3"); //23

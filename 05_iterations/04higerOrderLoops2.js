@@ -1,7 +1,7 @@
 /*
     Filter loop: 
         Syntax : objectName( callbackFunction(){} )
-        Lilter loop returns filter object
+        Filter loop returns filter object
 */
 
 const books = [
@@ -26,7 +26,7 @@ console.log(editionBook);
 /*
     Map loop:
         Syntax : objectName( CallbackFunction(){} )
-        Map loop returns object;
+        Map loop returns updated object;
 
 */
 

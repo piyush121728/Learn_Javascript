@@ -22,7 +22,8 @@
                     alt=""></li>
             <li><img width="200px" id="owl"
                     src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-                    alt="" <!-- First Way to add event on a html element -->
+                    alt="" 
+                <!-- First Way to add event on a html element -->
                 <!-- onclick="alert('owl')" -->
                 ></li>
             <li><img width="200px" id="prayer"
@@ -74,7 +75,7 @@
         console.log("Google Clicked!");
         //The preventDefault() method is used to prevent the default action of an element from triggering in JavaScript.
         e.preventDefault();
-        // e.stopPropagation();
+        e.stopPropagation();
     })
 
     //Task : When we click on 'img' then it parent 'li' should be removed from dom

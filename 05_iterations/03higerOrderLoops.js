@@ -40,7 +40,7 @@ for (const [key, value] of mp) {
 
 console.log("Array using forEach loops : ")
 
-const values = langs.forEach( function (lang){
+const values = langs.forEach( function (lang, index, arr){
     console.log(lang + " " + index + " " + arr);
 } )
 

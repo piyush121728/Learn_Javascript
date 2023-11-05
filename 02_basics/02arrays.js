@@ -8,7 +8,7 @@ console.log(anoArr)
 
 console.log(arr.concat(anoArr)) //[1, 2, 3, 4, 5, 6, 7, 8] or Combines two or more arrays. This method returns a new array without modifying any existing arrays.
 
-const newArr = [...arr,...anoArr]
+const newArr = [...arr,...anoArr] //using spread of operator
 console.log(newArr) //[1, 2, 3, 4, 5, 6, 7, 8]
 
 arr.push(anoArr) //print [ 1, 2, 3, 4, 5, [ 6, 7, 8 ] ]

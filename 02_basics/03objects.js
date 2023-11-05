@@ -1,4 +1,3 @@
-
 //object literals
 
 const sym = Symbol("abc")
