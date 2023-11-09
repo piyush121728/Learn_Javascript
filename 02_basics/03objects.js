@@ -38,3 +38,6 @@ console.log(info.greet());
 console.log(info.greet2());
 console.log(info);
 
+//to check whether a key is present in object or not
+console.log("piyush" in info)
+console.log(info.hasOwnProperty('enroll'))
